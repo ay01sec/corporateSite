@@ -1,0 +1,39 @@
+<!doctype html><html lang="ja">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>求人（業務委託） | 業務改善屋さん</title>
+<meta name="description" content="RPA/Python、Excel-VBA、GASの業務委託パートナー募集。フルリモート・副業可。">
+<link rel="stylesheet" href="assets/styles.css"><script defer src="assets/main.js"></script>
+</head>
+<body>
+<div id="site-header"></div>
+<main class="wrap">
+  <nav class="breadcrumb">ホーム ＞ 求人（業務委託）</nav>
+  <h1>求人（業務委託）</h1>
+  <div class="grid cols-2">
+    <div class="card">
+      <h3>募集ポジション</h3>
+      <ul class="list">
+        <li>RPA/Python（pywinauto、pyautogui、UIA）</li>
+        <li>Excel-VBA</li>
+        <li>GAS/Googleスプレッドシート</li>
+      </ul>
+      <p class="muted">フルリモート・副業可。時給・準委任・準委任＋成果など柔軟に対応します。</p>
+    </div>
+    <div class="card">
+      <form id="recruitForm">
+        <label>お名前<br/><input class="input" name="name" required></label><br/><br/>
+        <label>メールアドレス<br/><input class="input" type="email" name="email" required></label><br/><br/>
+        <label>スキルセット・経歴（抜粋）<br/><textarea name="skills" required placeholder="RPA 3年、Excel-VBA 5年、GAS 2年…"></textarea></label><br/>
+        <label>稼働可能時間の目安<br/><input class="input" name="hours" placeholder="例）平日夜2h、土曜4h など"></label><br/><br/>
+        <div class="stack">
+          <button class="btn" type="submit">応募メールを作成</button>
+          <span id="recruitStatus" class="small"></span>
+        </div>
+      </form>
+      <script>mountContactForm('recruitForm','recruitStatus',true)</script>
+    </div>
+  </div>
+</main>
+<div id="site-footer"></div>
+</body></html>
