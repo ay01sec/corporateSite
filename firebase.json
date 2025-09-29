@@ -1,0 +1,26 @@
+{
+  "hosting": {
+    "public": "public",
+    "ignore": ["**/.*", "**/node_modules/**"],
+    "cleanUrls": true,
+    "trailingSlash": false,
+    "redirects": [
+      { "source": "www.improve-biz.com", "destination": "https://improve-biz.com", "type": 301 }
+    ],
+    "headers": [
+      {
+        "source": "**/*.@(css|js|mjs|ico|png|jpg|jpeg|gif|webp|svg|woff|woff2|ttf|eot|mp4|webm)",
+        "headers": [
+          { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+        ]
+      },
+      {
+        "source": "/index.html",
+        "headers": [
+          { "key": "Cache-Control", "value": "no-cache" }
+        ]
+      }
+    ],
+    "rewrites": []
+  }
+}
