@@ -165,3 +165,30 @@ footer{
   padding:28px 0; margin-top:40px;
 }
 footer .wrap{padding-top:0; padding-bottom:0}
+
+/* ===== Responsive Header (追加) ===== */
+.nav{
+  display:flex; align-items:center; justify-content:space-between;
+}
+.nav-toggle{
+  display:none; margin-left:auto;
+  width:44px; height:40px; border:1px solid var(--line);
+  border-radius:10px; background:#fff; cursor:pointer;
+}
+.nav-toggle:focus{outline:2px solid #9ac7ff; outline-offset:2px}
+.nav-toggle-bar{
+  display:block; width:22px; height:2px; background:#111827; margin:5px auto; border-radius:2px;
+}
+.nav-links{display:flex; gap:10px; align-items:center}
+@media (max-width: 960px){
+  .nav-toggle{display:block}
+  .nav-links{
+    position:absolute; top:60px; left:0; right:0;
+    background:#fff; border-top:1px solid var(--line);
+    display:block; padding:10px 16px; box-shadow:var(--shadow);
+    transform:translateY(-8px); opacity:0; pointer-events:none; transition:opacity .18s ease, transform .18s ease;
+  }
+  .nav-links a{display:block; padding:10px 8px; margin:0; border-radius:8px}
+  .nav-links.open{transform:translateY(0); opacity:1; pointer-events:auto}
+  .nav .btn{display:block; margin-top:6px}
+}
