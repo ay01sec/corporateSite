@@ -7,7 +7,12 @@ function renderHeader(){
   return `
   <header>
     <nav class="nav" aria-label="グローバル">
-      <div class="brand"><a href="/index.html" aria-label="${SITE_NAME} トップへ">${SITE_NAME}</a></div>
+      <div class="brand">
+        <a href="/index.html" aria-label="${SITE_NAME} トップへ">
+          <img class="brand-logo" src="assets/logo_source.png" alt="" aria-hidden="true" />
+          <span class="brand-text">${SITE_NAME}</span>
+        </a>
+      </div>
 
       <button class="nav-toggle" aria-label="メニューを開く" aria-expanded="false" aria-controls="global-nav">
         <span class="nav-toggle-bar" aria-hidden="true"></span>
