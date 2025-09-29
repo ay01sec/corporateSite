@@ -21,7 +21,7 @@ function renderHeader(){
         <a href="/works.html">実績</a>
         <a href="/pricing.html">料金/FAQ</a>
         <a href="/company.html">会社情報</a>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfLDt8-lhI6h4p91E4Iv5i6LU4uHYF652DI-fKo4PdYnO4M-Q/viewform?usp=dialog">求人</a>
+        <a href="/recruit.html">求人</a>
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSfd5kkdbHRSh6pSzi-ccTw8eQaxFCvL4S5npUwi79jR6Eznkw/viewform?usp=header" class="btn">無料ヒアリングを依頼</a>
       </div>
     </nav>
