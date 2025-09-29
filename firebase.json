@@ -1,12 +1,10 @@
 {
   "hosting": {
-    "public": "public",
-    "ignore": ["**/.*", "**/node_modules/**"],
+    "site": "corpolate-b2fa7",
+    "public": ".",
+    "ignore": ["**/.*", "**/node_modules/**", "firebase.json", ".firebaserc"],
     "cleanUrls": true,
     "trailingSlash": false,
-    "redirects": [
-      { "source": "www.improve-biz.com", "destination": "https://improve-biz.com", "type": 301 }
-    ],
     "headers": [
       {
         "source": "**/*.@(css|js|mjs|ico|png|jpg|jpeg|gif|webp|svg|woff|woff2|ttf|eot|mp4|webm)",

@@ -2,6 +2,14 @@
   "projects": {
     "default": "corpolate-b2fa7"
   },
-  "targets": {},
+  "targets": {
+    "corpolate-b2fa7": {
+      "hosting": {
+        "corporate": [
+          "corpolate-b2fa7"
+        ]
+      }
+    }
+  },
   "etags": {}
 }
