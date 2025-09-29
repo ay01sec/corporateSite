@@ -32,7 +32,7 @@ function renderFooter(){
       <div class="grid cols-2">
         <div>
           <strong>${SITE_NAME}</strong><br/>
-          <span class="small muted">© ${y} Gyomu Kaizen LLC (仮)</span>
+          <span class="small muted">© ${y} GyomuKaizenYasan</span>
         </div>
         <div class="small muted" style="text-align:right">
           <a href="privacy.html">プライバシー</a> ／
